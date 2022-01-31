@@ -1,10 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="ru">
 
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="main-header">
+    <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+            <img src="img/bpl_logo.svg" width="80" height="40" alt="Логотип барбершопа БПЛэлектро">
+        </a>
+        <ul class="site-navigation">
+            <li>
+                <a href="info.html">Информация</a>
+            </li>
+            <li>
+                <a href="news.html">Новости</a>
+            </li>
+            <li>
+                <a href="price.html">Прайс-лист</a>
+            </li>
+            <li class="site-navigation-current">
+                <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+                <a href="contacts.html">Контакты</a>
+            </li>
+        </ul>
+        <ul class="user-navigation">
+            <li class="login-link">Вход</li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <h1 class="page-title">Cредства для ухода</h1>
+
+    <ul class="breadcrumbs">
+        <li>
+            <a href="index.html">Главная</a>
+        </li>
+        <li>
+            <a href="catalog.html">Магазин</a>
+        </li>
+        <li class="breadcrumbs-current">Средства для ухода</li>
+    </ul>
+    <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+    </section>
+
+    <section class="catalog">
+        <h2 class="visually-hidden">Список средств для ухода</h2>
+        <ul class="catalog-list">
+            <li class="catalog-item">
+                <h3>
+                    <a href="catalog-item.html">
+                        <span class="catalog-category">Набор для путешествий</span>
+                        <span class="catalog-item-title">Жумайсынба</span>
+                    </a>
+                </h3>
+                <p class="catalog-item-image">
+                    <a href="catalog-item.html">
+                        <img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий Жумайсынба">
+                    </a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>17 BYN</b>
+                    <a class="button" href="#">Купить</a>
+                </p>
+            </li>
+            <li class="catalog-item">
+                <h3>
+                    <a href="catalog-item.html">
+                        <span class="catalog-category">Увлажняющий кондиционер</span>
+                        <span class="catalog-item-title">«Холодно, закрой окно»</span>
+                    </a>
+                </h3>
+                <p class="catalog-item-image">
+                    <a href="catalog-item.html">
+                        <img src="img/product-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Холодно, закрой окно»">
+                    </a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>20 BYN</b>
+                    <a class="button" href="#">Купить</a>
+                </p>
+            </li>
+            <li class="catalog-item">
+                <h3>
+                    <a href="catalog-item.html">
+                        <span class="catalog-category">Гель для волос</span>
+                        <span class="catalog-item-title">«И не только для волос»</span>
+                    </a>
+                </h3>
+                <p class="catalog-item-image">
+                    <a href="catalog-item.html">
+                        <img src="img/product-3.jpg" width="220" height="165" alt="Гель для волос «И не только для волос»">
+                    </a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>12 BYN</b>
+                    <a class="button" href="#">Купить</a>
+                </p>
+            </li>
+            <li class="catalog-item">
+                <h3>
+                    <a href="catalog-item.html">
+                        <span class="catalog-category">Глина для укладки волос</span>
+                        <span class="catalog-item-title">«Слепи снеговика»</span>
+                    </a>
+                </h3>
+                <p class="catalog-item-image">
+                    <a href="catalog-item.html">
+                        <img src="img/product-4.jpg" width="220" height="165" alt="Глина для укладки волос «Слепи снеговика»">
+                    </a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>30 BYN</b>
+                    <a class="button" href="#">Купить</a>
+                </p>
+            </li>
+            <li class="catalog-item">
+                <h3>
+                    <a href="catalog-item.html">
+                        <span class="catalog-category">Гель для волос</span>
+                        <span class="catalog-item-title">«Почеши подмыху»</span>
+                    </a>
+                </h3>
+                <p class="catalog-item-image">
+                    <a href="catalog-item.html">
+                        <img src="img/product-5.jpg" width="220" height="165" alt="Гель для волос «Почеши подмыху»">
+                    </a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>5 BYN</b>
+                    <a class="button" href="#">Купить</a>
+                </p>
+            </li>
+            <li class="catalog-item">
+                <h3>
+                    <a href="catalog-item.html">
+                        <span class="catalog-category">Набор для бритья</span>
+                        <span class="catalog-item-title">«Россомаха»</span>
+                    </a>
+                </h3>
+                <p class="catalog-item-image">
+                    <a href="catalog-item.html">
+                        <img src="img/product-6.jpg" width="220" height="165" alt="Набор для бритья «Россомаха»">
+                    </a>
+                </p>
+                <p class="catalog-item-price">
+                    <b>50 BYN</b>
+                    <a class="button" href="#">Купить</a>
+                </p>
+            </li>
+        </ul>
+        <ul class="pagination-list">
+            <li class="pagination-item">
+                <a href="#">1</a>
+            </li>
+            <li class="pagination-item pagination-item-current">
+                <a>2</a>
+            </li>
+            <li class="pagination-item">
+                <a href="#">3</a>
+            </li>
+            <li class="pagination-item">
+                <a href="#">4</a>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer class="main-footer">
+    <p class="footer-contacts">
+        Барбершоп БПЛэлектро
+        <br> Адрес: Гродненская область, г. Лида, ул. Качана д.1
+        <br>
+        <a href="map.html">Тут нас нет!</a>
+        <br> Телефон: +375 (29) 11 44 853
+    </p>
+    <div class="footer-social">
+        <b>Давайте дружить!</b>
+        <ul>
+            <li>
+                <a class="social-button" href="#">Вконтакте</a>
+            </li>
+            <li>
+                <a class="social-button" href="#">Фейсбук</a>
+            </li>
+            <li>
+                <a class="social-button" href="#">Инстаграм</a>
+            </li>
+        </ul>
+    </div>
+    <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a class="button" href="https://bplelektro.by">BPLBarbyPrinces</a>
+    </p>
+</footer>
+
+<section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <span class="modal-close">x</span>
+</section>
+
+<section class="modal modal-map">
+    <h2 class="visually-hidden">Нас тут нет!</h2>
+    <span class="modal-close">x</span>
+</section>
 </body>
+
 </html>
