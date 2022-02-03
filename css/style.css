@@ -4,8 +4,94 @@ body{
     background: #EBEEDF;
     width: 100%;
     margin: 0;
-    padding: 10px;
-    font-family: 'Monserat';
+    padding: 0;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Monserat", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4F5439;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    font:inherit;
+
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #226a67;
+    border: none;
+}
+.button:hover,
+.button:focus,
+.button:active{
+    background-color: #a75358 ;
+}
+.main-navigation{
     font-size: 16px;
+    line-height: 20px;
+    color: white;
+    background-color: darkslategrey ;
+}
+.site-navigation,
+.user-navigation{
+    list-style: none;
+}
+.site-navigation a,
+.user-navigation a{
+color: white;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus{
+    background-color: #4A5420;
+    color: white;
+}
+
+.features-list{
+    list-style: none;
+}
+
+.feature-item h3{
+    text-align: center;
+}
+
+.feature-item h3{
+    font-size: 30px;
+    line-height: 42px;
+}
+.index-columns{
+    color: white;
+    background-color: seagreen;
+}
+
+.index-columns h2 {
+    background-color: darkgreen;
+    font-size: 30px;
+    line-height: 42px;
+}
+.news-list{
+    list-style: none;
+}
+
+.news-item time{
+    text-transform: none;
+}
+
+.gallery-content{
+    background-color: #EBEEDF;
+    border: 7px solid coral;
+}
+
+.appointment input{
+    font: inherit;
+
+    background-color: transparent;
+    border: 2px solid black;
+}
