@@ -35,7 +35,7 @@ a{
     font-size: 16px;
     line-height: 20px;
     color: white;
-    background-color: darkslategrey ;
+    background-color: #efab92;
 }
 .site-navigation,
 .user-navigation{
@@ -92,6 +92,373 @@ color: white;
 .appointment input{
     font: inherit;
 
+    background-color: white;
+    border: 2px solid coral;
+}
+
+.appointment-item input:focus{
+    border-color: greenyellow;
+}
+
+.main-footer{
+    color: #4A5420;
+    background-color: seagreen;
+}
+
+.footer-contacts a{
+    color: #EBEEDF;
+    text-decoration: underline;
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus{
+    text-decoration: none;
+}
+
+.footer-social{
+    text-align: center;
+}
+.footer-social ul {
+    list-style: none;
+}
+.social-button{
+    color: black;
+}
+.footer-copyright{
+    text-align: center;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus{
+    color: black;
+    background-color: white;
+}
+
+.modal{
+    color: black;
+    background-color: aqua;
+}
+.modal h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    font: inherit;
+    color: black;
+    text-transform: uppercase;
+    background-color: #4A5420;
+    border: 2px solid #a75358;
+}
+.login-form input:focus{
+    border-color: #a75358;
+}
+.inner-page{
+    color: #226a67;
+    background-color: darkseagreen;
+}
+.page-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+.breadcrumbs{
+    list-style: none;
+}
+.breadcrumbs a{
+    color: #a75358;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    text-decoration: underline;
+}
+
+.breadcrumbs-current{
+    color: orange;
+}
+.filter fieldset{
+    border: none;
+}
+.filter legend{
+    font-size: 22px;
+    line-height: 30px;
+}
+.filter ul{
+    list-style: none;
+    line-height: 18px;
+}
+.filter-input:hover + label,
+.filter-input:focus +label {
+    color: coral;
+}
+
+.filter-input:disabled + label{
+    color: #e6e6e6;
+    opacity: 0.5;
+}
+.catalog-list{
+    list-style: none;
+}
+.catalog-item{
+    background-color: orange;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.catalog-item:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.catalog-item a{
+    color: #EBEEDF;
+}
+.catalog-item h3{
+    font-size: 14px;
+    line-height: 18px;
+}
+.catalog-category{
+    text-transform: none;
+}
+.catalog-item-price b{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+.catalog-item-price .button{
+    line-height: 20px;
+}
+.pagination-list{
+    list-style: none;
+}
+.pagination-item a{
+    color: black;
+    background-color: orange;
+}
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active{
+    background-color: black;
+    color: #eeeeee;
+}
+.pagination-item-current a{
+    color: #eeeeee;
+    background-color: #226a67;
+}
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active{
+    color: white;
+    background-color: orange;
+}
+
+.product-photo-preview{
+    list-style: none;
+}
+.product-photo-preview li,
+.product-photo-full{
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+}
+.product-article{
+    text-align: right;
+}
+.product-price b{
+    line-height: 20px;
+    text-align: center;
+    background-color: #226a67;
+    color: white;
+}
+.product-info h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+.product-info ul{
+    list-style: none;
+}
+
+/* Сеточные стили */
+.main-header-logo{
+    order: 2;
+    width: 368px;
+    height: 250px;
+    /*display: block;*/
+}
+
+.site-navigation{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    min-height: 70px;
+}
+.user-navigation{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    min-height: 70px;
+}
+.main-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-navigation-wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+    min-height: 70px;
+    background-color: black;
     background-color: transparent;
-    border: 2px solid black;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.main-navigation-wrapper .container{
+    display: flex;
+    justify-content: space-between;
+}
+.features-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    min-height: 170px;
+}
+.feature-item{
+    width: 300px;
+
+    min-height: 170px;
+}
+.features{
+    margin-bottom: 80px;
+}
+.index-columns{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+}
+.news{
+    width: 380px;
+
+    min-height: 315px;
+}
+.gallery{
+    width: 300px;
+    min-height: 315px;
+}
+.contacts{
+    width: 380px;
+    min-height: 295px;
+}
+.appointment{
+    width: 300px;
+    min-height: 340px;
+}
+.main-footer{
+    padding: 60px 0;
+    margin-top: 65px;
+    min-height: 180px;
+}
+.main-footer .container{
+    display: flex;
+}
+.footer-contacts{
+    width: 320px;
+    margin: 0;
+    min-height: 100px;
+    margin-right: 80px;
+}
+.footer-social{
+    width: 145px;
+    min-height: 100px;
+}
+.footer-copyright{
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
+    min-height: 100px;
+}
+/*Каталог*/
+.inner-page .main-header{
+    margin-bottom: 50px;
+    background-color: #efab92;
+    min-height: 70px;
+}
+.inner-page .main-navigation{
+    align-items: flex-start;
+    flex-direction: row;
+    min-height: 70px;
+}
+.inner-page .user-navigation{
+    margin-left: auto;
+}
+.inner-page .main-header-logo{
+    order: 0;
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+}
+.page-title{
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
+    min-height: 42px;
+}
+.breadcrumbs{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+
+    min-height: 24px;
+}
+.filters{
+    width: 180px;
+    min-height: 687px;
+}
+.catalog{
+    width: 700px;
+}
+
+/*Карточка товара*/
+.inner-page{
+
+}
+.product-photos{
+    width: 400px;
+    min-height: 677px;
+}
+
+.product-info{
+    width: 390px;
+    min-height: 667px;
+}
+.catalog-columns{
+    display: flex;
+    justify-content: space-between;
+}
+.catalog-item{
+    width: 220px;
+    margin-bottom:20px;
+    margin-right: 20px;
+    min-height: 285px;
+    box-shadow: inset 0 0 0 2px purple;
+}
+.catalog-item:nth-child(3n){
+    margin-right: 0;
+}
+.catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    list-style: none;
+}
+.pagination-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-height: 47px;
+}
+.inner-page .main-footer{
+    margin-top: 45px;
 }
