@@ -72,11 +72,13 @@
       </section>
       <section class="gallery">
           <h2>Фотогалерея</h2>
+          <div class="gallery-container">
           <figure class="gallery-content">
               <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
           </figure>
-          <span class="button gallery-button gallery-button-back">Назад</span>
-          <span class="button gallery-button gallery-button-next">Вперёд</span>
+          <button class="button gallery-button gallery-button-back">Назад</button>
+          <button class="button gallery-button gallery-button-next" disabled>Вперёд</button>
+          </div>
       </section>
       </div>
       <div class="index-columns">
@@ -111,7 +113,7 @@
                   <label for="appointment-name">Ваше имя</label>
                   <input id="appointment-name" type="text" name="name" value="" placeholder="Головач Лена">
               </p>
-              <p class="appointment-phone">
+              <p class="appointment-item">
                   <label for="appointment-phone">Телефон</label>
                   <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+375 (29) 880-55-53">
               </p>

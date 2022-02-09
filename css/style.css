@@ -16,8 +16,10 @@ a{
     text-decoration: none;
 }
 .button{
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 30px;
     font:inherit;
-
     text-align: center;
     color: white;
     vertical-align: middle;
@@ -25,6 +27,12 @@ a{
 
     background-color: #226a67;
     border: none;
+}
+.button.disabled,
+.button:disabled{
+    cursor: default;
+    opacity: 0.5;
+    background-color: black;
 }
 .button:hover,
 .button:focus,
@@ -41,8 +49,20 @@ a{
 .user-navigation{
     list-style: none;
 }
+.site-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+}
+.user-navigation{
+    display: flex;
+    max-width: 140px;
+}
 .site-navigation a,
 .user-navigation a{
+    display: block;
+    padding: 25px 20px;
+    vertical-align: middle;
 color: white;
 }
 
@@ -63,8 +83,25 @@ color: white;
 }
 
 .feature-item h3{
+    position: relative;
+    margin: 0;
+    margin-bottom: 60px;
     font-size: 30px;
     line-height: 42px;
+}
+.feature-item h3::after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background-color: #a75358;
+    transform: rotate(45deg);
+}
+.feature-item p{
+    margin: 0 10px;
 }
 .index-columns{
     color: white;
@@ -83,11 +120,31 @@ color: white;
 .news-item time{
     text-transform: none;
 }
-
+.gallery-container{
+    position: relative;
+    height: 260px;
+}
 .gallery-content{
+    width: 286px;
+    height: 164px;
+    margin: 0;
     background-color: #EBEEDF;
     border: 7px solid coral;
 }
+.gallery-button{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+.gallery-button-back{
+    left: 0;
+}
+.gallery-button-next{
+    right: 0;
+}
+
 
 .appointment input{
     font: inherit;
@@ -289,6 +346,7 @@ color: white;
 .user-navigation{
     margin:0;
     padding: 0;
+    display: flex;
     list-style: none;
     min-height: 70px;
 }
@@ -296,6 +354,11 @@ color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.site-navigation a,
+.user-navigation a{
+
+    color: white;
 }
 .main-navigation-wrapper{
     width: 100%;
@@ -348,9 +411,44 @@ color: white;
     width: 380px;
     min-height: 295px;
 }
+.contacts p{
+    margin: 0;
+    margin-bottom: 25px;
+}
+.contacts .button{
+    margin: 0;
+}
 .appointment{
     width: 300px;
     min-height: 340px;
+}
+.appointment-info{
+    margin: 0;
+    margin-bottom: 15px;
+}
+.appointment-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.appointment-item{
+    width: 150px;
+    margin: 0;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.appointment-item label{
+    display: block;
+    margin-bottom:  9px;
+    margin-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+}
+.appointment .button{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
 }
 .main-footer{
     padding: 60px 0;
@@ -376,6 +474,11 @@ color: white;
     margin-left: auto;
     min-height: 100px;
 }
+.footer-copyright b{
+    display: block;
+    margin-bottom: 15px;
+}
+
 /*Каталог*/
 .inner-page .main-header{
     margin-bottom: 50px;
@@ -461,4 +564,19 @@ color: white;
 }
 .inner-page .main-footer{
     margin-top: 45px;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
