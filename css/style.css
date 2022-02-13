@@ -1,7 +1,7 @@
 /* #4F5439 #EBEEDF #C6D490 #4A5420 #96A16D */
 
 body{
-    background: #EBEEDF;
+    background: black;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body{
     font-family: "Monserat", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
-    color: #4F5439;
+    color: black;
 }
 a{
     text-decoration: none;
@@ -25,7 +25,7 @@ a{
     vertical-align: middle;
     text-transform: uppercase;
 
-    background-color: #226a67;
+    background-color: black;
     border: none;
 }
 .button.disabled,
@@ -37,13 +37,14 @@ a{
 .button:hover,
 .button:focus,
 .button:active{
-    background-color: #a75358 ;
+    background-color: saddlebrown ;
+    color: white;
 }
 .main-navigation{
     font-size: 16px;
     line-height: 20px;
     color: white;
-    background-color: #efab92;
+    background-color: black;
 }
 .site-navigation,
 .user-navigation{
@@ -70,7 +71,7 @@ color: white;
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus{
-    background-color: #4A5420;
+    background-color: black;
     color: white;
 }
 
@@ -88,6 +89,7 @@ color: white;
     margin-bottom: 60px;
     font-size: 30px;
     line-height: 42px;
+    color: white;
 }
 .feature-item h3::after{
     content: "";
@@ -97,26 +99,38 @@ color: white;
     width: 20px;
     height: 20px;
     margin-left: -10px;
-    background-color: #a75358;
+    background-color: white;
     transform: rotate(45deg);
 }
 .feature-item p{
     margin: 0 10px;
+    color: white;
 }
 .index-columns{
     color: white;
-    background-color: seagreen;
+    background-color: white;
 }
 
 .index-columns h2 {
-    background-color: darkgreen;
+    background-color: black;
+    color: white;
     font-size: 30px;
     line-height: 42px;
 }
 .news-list{
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
     list-style: none;
 }
 
+.news-item {
+    margin-bottom: 25px;
+}
+.news-item p{
+    margin: 0;
+    color: black;
+}
 .news-item time{
     text-transform: none;
 }
@@ -128,8 +142,8 @@ color: white;
     width: 286px;
     height: 164px;
     margin: 0;
-    background-color: #EBEEDF;
-    border: 7px solid coral;
+    background-color: white;
+    border: 7px solid black;
 }
 .gallery-button{
     box-sizing: border-box;
@@ -150,20 +164,20 @@ color: white;
     font: inherit;
 
     background-color: white;
-    border: 2px solid coral;
+    border: 2px solid black;
 }
 
 .appointment-item input:focus{
-    border-color: greenyellow;
+    border-color: black;
 }
 
 .main-footer{
-    color: #4A5420;
-    background-color: seagreen;
+    color: white;
+    background-color: black;
 }
 
 .footer-contacts a{
-    color: #EBEEDF;
+    color: white;
     text-decoration: underline;
 }
 .footer-contacts a:hover,
@@ -178,7 +192,7 @@ color: white;
     list-style: none;
 }
 .social-button{
-    color: black;
+    color: white;
 }
 .footer-copyright{
     text-align: center;
@@ -191,8 +205,8 @@ color: white;
 }
 
 .modal{
-    color: black;
-    background-color: aqua;
+    color: white;
+    background-color: black;
 }
 .modal h2{
     font-size: 30px;
@@ -203,15 +217,15 @@ color: white;
     font: inherit;
     color: black;
     text-transform: uppercase;
-    background-color: #4A5420;
-    border: 2px solid #a75358;
+    background-color: white;
+    border: 2px solid white;
 }
 .login-form input:focus{
     border-color: #a75358;
 }
 .inner-page{
-    color: #226a67;
-    background-color: darkseagreen;
+    color: white;
+    background-color: white;
 }
 .page-title {
     font-size: 30px;
@@ -221,7 +235,7 @@ color: white;
     list-style: none;
 }
 .breadcrumbs a{
-    color: #a75358;
+    color: black;
 }
 
 .breadcrumbs a:hover,
@@ -230,7 +244,8 @@ color: white;
 }
 
 .breadcrumbs-current{
-    color: orange;
+    color: black;
+    font-weight: 800;
 }
 .filter fieldset{
     border: none;
@@ -238,6 +253,7 @@ color: white;
 .filter legend{
     font-size: 22px;
     line-height: 30px;
+    color: black;
 }
 .filter ul{
     list-style: none;
@@ -245,27 +261,28 @@ color: white;
 }
 .filter-input:hover + label,
 .filter-input:focus +label {
-    color: coral;
+    color: white;
+    background-color: black;
 }
 
 .filter-input:disabled + label{
-    color: #e6e6e6;
+    color: black;
     opacity: 0.5;
 }
 .catalog-list{
     list-style: none;
 }
 .catalog-item{
-    background-color: orange;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .catalog-item:hover{
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 .catalog-item a{
     display: flex;
     flex-direction: column;
-    color: #EBEEDF;
+    color: black;
 
 }
 .catalog-item h3{
@@ -293,13 +310,17 @@ color: white;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    background-color: #eeeeee;
+    background-color: black;
 }
 .catalog-item-price .button{
     width: 50px;
     padding: 13px 18px 11px;
     margin-right: 0;
     line-height: 20px;
+    color: white;
+}
+.catalog-item-price .button:hover{
+    color: black;
 }
 .pagination-list{
     display: flex;
@@ -317,8 +338,8 @@ color: white;
 .pagination-item a{
     display: block;
     padding: 10px 19px;
-    color: black;
-    background-color: orange;
+    color: white;
+    background-color: black;
 }
 .pagination-item a:hover,
 .pagination-item a:focus,
@@ -327,14 +348,15 @@ color: white;
     color: #eeeeee;
 }
 .pagination-item-current a{
-    color: #eeeeee;
-    background-color: #226a67;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
 }
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active{
     color: white;
-    background-color: orange;
+    background-color: black;
 }
 
 .product-photo-preview{
@@ -350,8 +372,8 @@ color: white;
 .product-price b{
     line-height: 20px;
     text-align: center;
-    background-color: #226a67;
-    color: white;
+    background-color: black;
+    color: black;
 }
 .product-info h3{
     font-size: 24px;
@@ -396,7 +418,7 @@ color: white;
     width: 100%;
     margin-bottom: 60px;
     min-height: 70px;
-    background-color: black;
+    background-color: white;
     background-color: transparent;
 }
 .container{
@@ -429,6 +451,7 @@ color: white;
     justify-content: space-between;
     padding: 50px 80px;
     margin-bottom: 35px;
+    color: black;
 }
 .news{
     width: 380px;
@@ -464,10 +487,15 @@ color: white;
     justify-content: space-between;
 }
 .appointment-item{
-    width: 150px;
+    width: 140px;
     margin: 0;
     margin-right: 5px;
     margin-bottom: 10px;
+}
+.appointment-item input{
+    box-sizing: border-box;
+    width: 140px;
+    padding:8px 15px 7px 15px;
 }
 .appointment-item label{
     display: block;
@@ -514,7 +542,7 @@ color: white;
 /*Каталог*/
 .inner-page .main-header{
     margin-bottom: 50px;
-    background-color: #efab92;
+    background-color: white;
     min-height: 70px;
 }
 .inner-page .main-navigation{
@@ -535,7 +563,7 @@ color: white;
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
-
+    color: black;
     min-height: 42px;
 }
 .breadcrumbs{
@@ -598,7 +626,7 @@ color: white;
     width: 700px;
 }
 .catalog-item a{
-    color: white;
+    color: black;
 }
 
 .filter-option{
@@ -610,6 +638,7 @@ color: white;
     display: block;
     cursor: pointer;
     user-select: none;
+    color: black;
 }
 .filter-input-checkbox + label::before{
     content: "";
@@ -620,7 +649,7 @@ color: white;
     width: 16px;
     height: 16px;
 
-    border: 2px solid white;
+    border: 2px solid black;
 }
 .filter-input-checkbox:checked + label:after{
     content: "";
@@ -629,7 +658,7 @@ color: white;
     left: -38px;
     width: 12px;
     height: 12px;
-    background-color: greenyellow;
+    background-color: black;
 }
 .filter-input-radio + label::before{
     content: "" ;
@@ -638,7 +667,7 @@ color: white;
     top: -1px;
     width: 16px;
     height: 16px;
-    border: 2px solid greenyellow;
+    border: 2px solid black;
     border-radius: 50%;
 }
 .filter-input-radio + label::after{
@@ -648,7 +677,7 @@ color: white;
     left: -36px;
     width: 8px;
     height: 8px;
-    background-color: white;
+    background-color: black;
     border-radius: 50%;
 }
 
@@ -697,7 +726,7 @@ color: white;
     padding: 13px 36px 11px 36px;
     line-height:  20px;
     text-align: center;
-    background-color: orange;
+    background-color: white;
     box-sizing: border-box;
 }
 .product-price .button{
@@ -726,7 +755,7 @@ color: white;
     left: 2px;
     width: 8px;
     height: 8px;
-    background-color: orange;
+    background-color: black;
     transform: rotate(45deg);
 }
 .catalog-columns{
