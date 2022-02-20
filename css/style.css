@@ -1332,3 +1332,6 @@ input[type="radio"].visually-hidden {
 .modal-map p {
   margin: 0;
 }
+.modal-show{
+  display: block;
+}
