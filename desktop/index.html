@@ -23,7 +23,7 @@
        </ul>
             <ul class="user-navigation">
            <li class="login-link">
-               <a class="login-link" href="login.html">Вход</a>
+               <a class="login__link" href="login.html">Вход</a>
            </li>
        </ul>
            </div>
@@ -94,8 +94,10 @@
               Розница: +375 (29) 388 13 63<br>
               Опт: +375 (29) 388 13 11
           </p>
-          <a class="button" href="map.html">Как проехать</a>
+          <div class="contacts__buttons">
+          <a class="button map-popup-button" href="map.html">Как проехать</a>
           <a class="button" href="contacts.html">Обратная связь</a>
+          </div>
       </section>
       <section class="appointment">
           <h2>Записаться</h2>
@@ -197,38 +199,11 @@
 
   <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
-      <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/org/bplelektro/1144989977/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">БПЛэлектро</a><a href="https://yandex.by/maps/21144/lida/category/electrical_products/184107066/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Электротехническая продукция в Лиде</a><a href="https://yandex.by/maps/21144/lida/category/wholesale_company/184108065/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Оптовая компания в Лиде</a><iframe src="https://yandex.by/map-widget/v1/-/CCU5ZZEWlA" width="766" height="561" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>      </p>
+      <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/org/bplelektro/1144989977/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">БПЛэлектро</a><a href="https://yandex.by/maps/21144/lida/category/electrical_products/184107066/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Электротехническая продукция в Лиде</a><a href="https://yandex.by/maps/21144/lida/category/wholesale_company/184108065/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Оптовая компания в Лиде</a><iframe src="https://yandex.by/map-widget/v1/-/CCU5ZZEWlA" width="766" height="561" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
       <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-<script>
-    var link = document.querySelector(".login-link");
-    var popup = document.querySelector(".modal-login");
-    var form = popup.querySelector("form");
-    var close = document.querySelector(".modal-close");
-    var login = popup.querySelector("[name=login]");
-    var password = popup.querySelector("[name=password]");
-
-    link.addEventListener("click",function (evt){
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-
-        login.focus();
-    });
-
-    close.addEventListener("click",function (evt){
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-    })
-
-    form.addEventListener("submit", function (evt){
-        if (!login.value || !password.value) {
-            evt.preventDefault();
-        }
-    });
-</script>
-
+<script src="js/popup.js"></script>
 
 </body>
 

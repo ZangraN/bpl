@@ -157,15 +157,20 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.inner-page .user-navigation {
+.inner-page{
   margin-left: auto;
 }
+.login-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .site-navigation a,
 .user-navigation a {
   display: block;
   padding: 25px 20px;
-
   vertical-align: middle;
   color: #ffffff;
 }
@@ -204,22 +209,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .login-link {
   position: relative;
-
   padding-left: 50px;
-}
-
-.login-link::before {
-  content: "";
-
-  position: absolute;
-  top: 27px;
-  left: 24px;
-
-  width: 16px;
-  height: 18px;
-
-
-  opacity: 0.3;
 }
 
 .login-link:hover::before,
@@ -363,9 +353,15 @@ input[type="radio"].visually-hidden {
 .contacts {
   width: 380px;
 }
+.contacts__buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1;
+  height: auto;
+}
 
 .contacts p {
-  margin: 0;
   margin-bottom: 25px;
 }
 
@@ -374,7 +370,6 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-info {
-  margin: 0;
   margin-bottom: 15px;
 }
 
@@ -386,7 +381,6 @@ input[type="radio"].visually-hidden {
 
 .appointment-item {
   width: 140px;
-  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -398,11 +392,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-item input {
   width: 140px;
-  padding-top: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 7px;
-
+  padding: 8px 15px 7px 15px;
   font: inherit;
   background-color: transparent;
   border: 2px solid #000000;
@@ -443,8 +433,6 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
-
   list-style: none;
 }
 
@@ -632,7 +620,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
   margin-bottom: 25px;
 
   list-style: none;
@@ -665,10 +652,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item h3 {
   order: 1;
-  margin-top: 17px;
-  margin-bottom: 12px;
-  margin-left: 16px;
-  margin-right: 15px;
+  margin: 17px 16px 12px 15px;
 
   font-size: 14px;
   line-height: 18px;
@@ -689,7 +673,6 @@ input[type="radio"].visually-hidden {
 .catalog-item-price {
   display: flex;
   margin: 15px;
-  margin-top: 0;
 }
 
 .catalog-item-price b {
@@ -713,6 +696,146 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   color: #ffffff;
 }
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.inner-content h2 + h3 {
+  margin-top: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+
+  border: 2px solid #000000;
+}
+
+.inner-content .big-heading {
+  display: flex;
+  align-items: center;
+
+  margin-top: 55px;
+  margin-bottom: 65px;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.big-heading::before,
+.big-heading::after {
+  content: "";
+
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 2px;
+
+  background: #000000;
+}
+
+.big-heading::before {
+  margin-right: 25px;
+}
+
+.big-heading::after {
+  margin-left: 25px;
+}
+
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.custom-table-1 {
+  width: 100%;
+}
+
+.custom-table-1 td {
+  width: 50%;
+}
+
+.custom-table-1 td:last-child {
+  text-align: center;
+}
+
+.inner-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+.inner-columns > h2:first-child {
+  width: 460px;
+  margin-top: 0;
+  margin-right: calc(100% - 460px);
+}
+
 
 .pagination-list {
   display: flex;
@@ -766,17 +889,14 @@ input[type="radio"].visually-hidden {
 
 .product-photo-preview {
   display: flex;
-  padding: 0;
-  margin: 0;
-
+  margin-top: 20px;
   list-style: none;
 }
 
 .product-photo-preview li {
-  width: 140px;
-  height: 149px;
   margin-right: 20px;
-
+  height: auto;
+  width: 149px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -784,14 +904,19 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
 
-.product-photo-preview li:nth-child(3n) {
+.product-photo-preview li:nth-child(4n) {
   margin-right: 0;
+}
+.items-wrapper{
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-photo-full {
+  display: flex;
+  justify-content: center;
   width: 460px;
   height: 498px;
-  margin: 0;
   margin-bottom: 20px;
 
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
@@ -1120,15 +1245,19 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   max-width: 150px;
-  margin: 0;
   margin-left: auto;
 
-  text-align: center;
 }
 
 .footer-copyright .button {
-  display: block;
+  display: flex;
+  text-align: center;
+  justify-content: center;
   margin-right: 0;
 }
 
@@ -1329,9 +1458,24 @@ input[type="radio"].visually-hidden {
   border: 7px solid white;
 }
 
-.modal-map p {
-  margin: 0;
+@keyframes bounce {
+  0% {transform:  translateY(-2000px); }
+  70% {transform:  translateY(30px); }
+  90% {transform:  translateY(-10px); }
+  100% {transform:  translateY(0px); }
 }
 .modal-show{
   display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+@keyframes  shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px);}
+}
+.modal-error{
+  animation: shake;
+  animation-duration: 0.6s;
 }
